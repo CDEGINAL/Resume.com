@@ -10,17 +10,21 @@ body {
   flex-direction: column;
   font-family: 'Times New Roman', Times, serif;
   background-color: #000000;
-  color: #fbf6f6;
-  animation: fadeIn 1s ease; /* Animation for body */
+  color: #fbf6f6; /* Bright white font */
+  animation: fadeIn 1s ease;
+  font-size: 18px; /* Slightly increased font size */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Subtle shadow for better readability */
 }
+
 /* Background Image */
 body {
-  background-image: url('photo-1667984390535-6d03cff0b11a.avif'); /* Update with your image path */
-  background-size: cover; /* Cover the entire page */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-attachment: fixed; 
-  color: #fbf6f6; /* Text color for contrast */
+  background-image: url('/Users/chandrashekhardeginal/Downloads/photo-1667984390535-6d03cff0b11a.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fbf6f6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Shadow for readability */
 }
 
 /* Fade-in Animation */
@@ -33,7 +37,7 @@ body {
   }
 }
 
-/* Content Wrapper to Take up Remaining Space */
+/* Content Wrapper */
 main {
   flex: 1;
   display: flex;
@@ -43,12 +47,14 @@ main {
 
 /* Header */
 header {
-  background: linear-gradient(rgba(3, 3, 3, 0.6), rgba(21, 21, 21, 0.6)), url('') no-repeat center center/cover;
+  background: linear-gradient(rgba(3, 3, 3, 0.6), rgba(21, 21, 21, 0.6));
   width: 100%;
   padding: 40px 0;
   text-align: center;
-  color: white;
-  animation: slideDown 1s ease; /* Animation for header */
+  color: #ffffff; /* Bright white for better contrast */
+  font-size: 28px; /* Increased header font size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* More pronounced shadow for header */
+  animation: slideDown 1s ease;
 }
 
 /* Slide-down Animation */
@@ -70,37 +76,33 @@ header {
   border: 3px solid rgb(18, 17, 17);
 }
 
-/* Style for the navigation list */
+/* Navigation List */
 .nav-list {
   list-style-type: none;
-  display: inline-flex; /* Flexbox layout */
-  align-items: center; /* Center items horizontally */
-  gap: 30px; /* Space between buttons vertically */
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
   padding: 0;
   margin: 20px 0;
 }
 
-/* Styling for the buttons */
+/* Navigation Buttons */
 .nav-btn {
   display: block;
-  padding: 10px 20px; /* Padding for button-like appearance */
-  background-color: #393737; /* Button color */
-  color: rgb(245, 243, 243); /* Text color */
-  text-decoration: none; /* Remove underline */
-  border-radius: 10px; /* Rounded corners */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition on hover */
-}
-
-/* Hover effect for buttons */
-.nav-btn:hover {
-  background-color: #cee08c; /* Darker blue on hover */
-  transform: scale(1.05); /* Slightly enlarges on hover */
-}
-
-/* Optional: Adjust font size */
-.nav-btn {
+  padding: 10px 20px;
+  background-color: #393737;
+  color: rgb(245, 243, 243); /* Bright text */
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Button text shadow */
   font-size: 20px;
   font-weight: bold;
+}
+
+.nav-btn:hover {
+  background-color: #cee08c;
+  transform: scale(1.05);
 }
 
 /* Section Styling */
@@ -108,10 +110,14 @@ section {
   margin: 30px 0;
   width: 80%;
   max-width: 800px;
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-  border-radius: 10px; /* Rounded corners */
-  padding: 20px; /* Padding for inner content */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  color: #fbf6f6; /* Bright white */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Shadow for text */
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 /* Work Experience Section */
@@ -129,19 +135,9 @@ section {
   margin: 20px 0;
   position: relative;
   padding-left: 40px;
-  animation: fadeInUp 0.5s ease; /* Animation for timeline items */
-}
-
-/* Fade-in Up Animation */
-@keyframes fadeInUp {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  animation: fadeInUp 0.5s ease;
+  color: #fbf6f6; /* Bright text for timeline items */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Shadow for better readability */
 }
 
 .timeline-item::before {
@@ -151,24 +147,29 @@ section {
   top: 0;
   height: 100%;
   width: 2px;
-  background: #b5c674; /* Line color */
+  background: #b5c674;
 }
 
 .date {
-  color: #d4dae1; /* Date color */
+  color: #d4dae1;
+  font-size: 16px;
 }
 
 /* List Styling */
 .experience-list {
-  list-style-type: disc; /* Changes bullet style to disc */
-  padding-left: 20px; /* Adds space between bullets and text */
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
 .experience-list li {
-  margin-bottom: 10px; /* Adds space between list items */
-  font-size: 16px; /* Sets font size */
-  line-height: 1.5; /* Increases line height for readability */
+  margin-bottom: 10px;
+  font-size: 18px; /* Slightly larger font */
+  line-height: 1.7;
+  color: #fbf6f6;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Shadow for list text */
 }
+
+/* Word Cloud */
 .word-cloud {
   display: flex;
   flex-wrap: wrap;
