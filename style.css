@@ -1,0 +1,307 @@
+/* General Styling */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #000000;
+  color: #fbf6f6;
+  animation: fadeIn 1s ease; /* Animation for body */
+}
+/* Background Image */
+body {
+  background-image: url('photo-1667984390535-6d03cff0b11a.avif'); /* Update with your image path */
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed; 
+  color: #fbf6f6; /* Text color for contrast */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Content Wrapper to Take up Remaining Space */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+header {
+  background: linear-gradient(rgba(3, 3, 3, 0.6), rgba(21, 21, 21, 0.6)), url('') no-repeat center center/cover;
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+  animation: slideDown 1s ease; /* Animation for header */
+}
+
+/* Slide-down Animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid rgb(18, 17, 17);
+}
+
+/* Style for the navigation list */
+.nav-list {
+  list-style-type: none;
+  display: inline-flex; /* Flexbox layout */
+  align-items: center; /* Center items horizontally */
+  gap: 30px; /* Space between buttons vertically */
+  padding: 0;
+  margin: 20px 0;
+}
+
+/* Styling for the buttons */
+.nav-btn {
+  display: block;
+  padding: 10px 20px; /* Padding for button-like appearance */
+  background-color: #393737; /* Button color */
+  color: rgb(245, 243, 243); /* Text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 10px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for buttons */
+.nav-btn:hover {
+  background-color: #cee08c; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+/* Optional: Adjust font size */
+.nav-btn {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Section Styling */
+section {
+  margin: 30px 0;
+  width: 80%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding for inner content */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+/* Work Experience Section */
+#work-experience {
+  padding: 20px;
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  padding: 10px 0;
+}
+
+.timeline-item {
+  margin: 20px 0;
+  position: relative;
+  padding-left: 40px;
+  animation: fadeInUp 0.5s ease; /* Animation for timeline items */
+}
+
+/* Fade-in Up Animation */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: #b5c674; /* Line color */
+}
+
+.date {
+  color: #d4dae1; /* Date color */
+}
+
+/* List Styling */
+.experience-list {
+  list-style-type: disc; /* Changes bullet style to disc */
+  padding-left: 20px; /* Adds space between bullets and text */
+}
+
+.experience-list li {
+  margin-bottom: 10px; /* Adds space between list items */
+  font-size: 16px; /* Sets font size */
+  line-height: 1.5; /* Increases line height for readability */
+}
+.word-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+.word {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: #393737;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.word:hover {
+  background-color: #f39c12;
+  transform: scale(1.1);
+}
+
+/* Grouping based on skill categories */
+.programming:hover ~ .programming,
+.programming:hover {
+  background-color: #3498db;
+  transform: scale(1.1);
+}
+
+.databases:hover ~ .databases,
+.databases:hover {
+  background-color: #2ecc71;
+  transform: scale(1.1);
+}
+
+.cloud:hover ~ .cloud,
+.cloud:hover {
+  background-color: #9b59b6;
+  transform: scale(1.1);
+}
+
+.data-engineering:hover ~ .data-engineering,
+.data-engineering:hover {
+  background-color: #e74c3c;
+  transform: scale(1.1);
+}
+
+.operating-systems:hover ~ .operating-systems,
+.operating-systems:hover {
+  background-color: #e67e22;
+  transform: scale(1.1);
+}
+
+.tools:hover ~ .tools,
+.tools:hover {
+  background-color: #1abc9c;
+  transform: scale(1.1);
+}
+
+.skills:hover ~ .skills,
+.skills:hover {
+  background-color: #f1c40f;
+  transform: scale(1.1);
+}
+
+.methodologies:hover ~ .methodologies,
+.methodologies:hover {
+  background-color: #e84393;
+  transform: scale(1.1);
+}
+/* Contact Icons Styling */
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+  margin-top: 20px;
+}
+
+.contact-btn {
+  display: inline-block;
+  width: 60px; /* Set fixed width */
+  height: 60px; /* Set fixed height */
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent button background */
+  border-radius: 50%; /* Makes it circular */
+  display: flex;
+  align-items: center; /* Center icon vertically */
+  justify-content: center; /* Center icon horizontally */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add some shadow */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.contact-btn img {
+  width: 50%; /* Icon size relative to button */
+  height: 50%; /* Icon size relative to button */
+}
+
+.contact-btn:hover {
+  background-color: #007bff; /* Button color on hover */
+  transform: scale(1.1); /* Slightly enlarges on hover */
+}
+
+.contact-btn img:hover {
+  filter: brightness(0) invert(1); /* Invert colors on hover */
+}
+
+/* Skills Section with Bars */
+.skills-bar {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.skills-bar div {
+  background-color: rgba(237, 245, 200, 0.6); /* Semi-transparent skill bars */
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.skills-bar div span {
+  display: block;
+  height: 20px;
+  background-color: #d0ed76; /* Solid color for skill level */
+  text-align: center;
+  color: rgb(6, 5, 5);
+}
+
+/* Footer - Sticky at Bottom */
+footer {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
