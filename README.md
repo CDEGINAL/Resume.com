@@ -1,4 +1,4 @@
-# Resume.com
+
 
 **My Online Resume**
 
@@ -8,7 +8,7 @@ This is a simple online resume website built using HTML and CSS. The project inc
 
 index.html: The main HTML file containing the structure and content of the resume.
 style.css: The CSS file used to style the resume.
-Features
+**Features**
 Summary/Objectives: A short statement about my professional background and career goals.
 Education: Information about my degrees, the institutions I attended, and the dates.
 Work Experience: Details of my previous roles, employers, and job responsibilities.
