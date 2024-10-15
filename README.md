@@ -13,17 +13,17 @@ This is a simple online resume website built using HTML and CSS. The project inc
 
 Summary/Objectives: A short statement about my professional background and career goals.
 
-##Education: Information about my degrees, the institutions I attended, and the dates.
+#Education: Information about my degrees, the institutions I attended, and the dates.
 
-##Work Experience: Details of my previous roles, employers, and job responsibilities.
+#Work Experience: Details of my previous roles, employers, and job responsibilities.
 
-##Skills: A list of my key skills and areas of expertise.
+#Skills: A list of my key skills and areas of expertise.
 
-##Awards & Certifications: Any relevant awards, certifications, or other accomplishments.
+#Awards & Certifications: Any relevant awards, certifications, or other accomplishments.
 
-##Profile Photo: A profile picture included in the resume.
+#Profile Photo: A profile picture included in the resume.
 
-##Footer: Includes my name and copyright information.
+#Footer: Includes my name and copyright information.
 
 
 **Demo**
